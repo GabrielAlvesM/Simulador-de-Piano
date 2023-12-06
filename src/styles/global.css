@@ -5,13 +5,21 @@ body{
     min-height: 100vh;
     background-color: #e3f2fd;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
 }
 
 .container{
     width: 780px;
-    border: 1px solid red;
     border-radius: 20px;
     padding: 100px 40px;
+    background-color: #000;
+}
+
+.container header{
+    color: #b2b2b2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header h2{
@@ -24,7 +32,7 @@ header .column{
     gap: 20px;
 }
 
-header .column span{
+header .column label{
     font-weight: 500;
     font-size: 1.19rem;
 }
@@ -42,3 +50,71 @@ header .column span{
     cursor: pointer;
     position: relative;
 }
+
+.keys-check input::before{
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: inherit;
+    background-color: #8c8c8c;
+    top: 50%;
+    left: 0.3rem;
+    position: absolute;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.keys-check input:checked::before{
+    left: 2.1rem;
+    background-color: #8c8c8c;
+}
+
+.piano-key{
+    display: flex;
+    margin-top: 40px;
+}
+
+.piano-key .key {
+    user-select: none;
+    cursor: pointer;
+    color: #a2a2a2;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.piano-key .natural{
+    width: 70px;
+    height: 230px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background: linear-gradient(#fff 96%, #eee 4%);
+}
+
+.piano-key .natural:active{
+    box-shadow: inset -5px -5px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom #fff 0%, #eee 100%);
+}
+
+.piano-key .acidente{
+    width: 44px;
+    height: 140px;
+    z-index: 2;
+    margin: 0 -22px 0 -22px;
+    border: 1px solid #000;
+    border-radius: 0 0 5px 5px;
+    background: linear-gradient(#333, #000);
+}
+
+.piano-key .natural:active{
+    box-shadow: inset -5px -5px 20px rgba(255, 255, 255, 0.1);
+    background: linear-gradient(to bottom #000 , #434343 100%);
+}
+
+.piano-key span{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.13rem;
+}
+
