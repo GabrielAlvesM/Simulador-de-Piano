@@ -13,32 +13,32 @@
         <header>
             <h2>Virtual Piano</h2>
             <div class="column volume-slider">
-                <label for="ivolume">Volume</label> <input type="range" id="ivolume">
+                <label for="ivolume">Volume</label> <input type="range" id="ivolume" min="0" max="1" value="0.5" step="any">
             </div>
             <div class="column keys-check">
-                <label for="ikey">Teclas</label> <input type="checkbox" id="ikey">
+                <label for="ikey">Teclas</label> <input type="checkbox" id="ikey" checked>
             </div>
         </header>
         <ul class="piano-key">
-            <li class="natural C key"><span>a</span></li>
-            <li class="acidente CSust key"><span>w</span></li>
-            <li class="natural D key"><span>s</span></li>
-            <li class="acidente DSust key"><span>e</span></li>
-            <li class="natural E key"><span>d</span></li>
-            <li class="natural F key"><span>f</span></li>
-            <li class="acidente FSust key"><span>t</span></li>
-            <li class="natural G key"><span>g</span></li>
-            <li class="acidente GSust key"><span>y</span></li>
-            <li class="natural A key"><span>h</span></li>
-            <li class="acidente ASust key"><span>u</span></li>
-            <li class="natural B key"><span>j</span></li>
-            <li class="natural C key"><span>k</span></li>
-            <li class="acidente CSust key"><span>o</span></li>
-            <li class="natural D key"><span>l</span></li>
-            <li class="acidente DSust key"><span>p</span></li>
-            <li class="natural E key"><span>;</span></li>
+            <li class="natural  key" data-key="a"><span>a</span></li>
+            <li class="acidente key" data-key="w"><span>w</span></li>
+            <li class="natural  key" data-key="s"><span>s</span></li>
+            <li class="acidente key" data-key="e"><span>e</span></li>
+            <li class="natural  key middle" data-key="d"><span>d</span></li>
+            <li class="natural  key middle" data-key="f"><span>f</span></li>
+            <li class="acidente key" data-key="t"><span>t</span></li>
+            <li class="natural  key" data-key="g"><span>g</span></li>
+            <li class="acidente key" data-key="y"><span>y</span></li>
+            <li class="natural  key" data-key="h"><span>h</span></li>
+            <li class="acidente key" data-key="u"><span>u</span></li>
+            <li class="natural  key middle" data-key="j"><span>j</span></li>
+            <li class="natural  key middle" data-key="k"><span>k</span></li>
+            <li class="acidente key" data-key="o"><span>o</span></li>
+            <li class="natural  key" data-key="l"><span>l</span></li>
+            <li class="acidente key" data-key="p"><span>p</span></li>
+            <li class="natural  key" data-key=";"><span>;</span></li>
         </ul>
     </div>
-    <script src="src/scripts/engine.js"></script>
+    <script src="src/scripts/engine.js" defer></script>
 </body>
 </html>

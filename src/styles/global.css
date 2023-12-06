@@ -6,6 +6,7 @@ body{
     background-color: #e3f2fd;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
+    overflow-y: hidden;
 }
 
 .container{
@@ -66,7 +67,7 @@ header .column label{
 
 .keys-check input:checked::before{
     left: 2.1rem;
-    background-color: #8c8c8c;
+    background-color: #d6cccc;
 }
 
 .piano-key{
@@ -90,7 +91,7 @@ header .column label{
     background: linear-gradient(#fff 96%, #eee 4%);
 }
 
-.piano-key .natural:active{
+.piano-key .natural.active{
     box-shadow: inset -5px -5px 20px rgba(0, 0, 0, 0.2);
     background: linear-gradient(to bottom #fff 0%, #eee 100%);
 }
@@ -105,7 +106,7 @@ header .column label{
     background: linear-gradient(#333, #000);
 }
 
-.piano-key .natural:active{
+.piano-key .acidente.active{
     box-shadow: inset -5px -5px 20px rgba(255, 255, 255, 0.1);
     background: linear-gradient(to bottom #000 , #434343 100%);
 }
@@ -118,3 +119,10 @@ header .column label{
     font-size: 1.13rem;
 }
 
+.piano-key .key.hide span{
+    display: none;
+}
+
+li.natural.middle{
+    border-radius: 0 0 5px 5px;
+}
