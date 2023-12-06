@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador de Piano</title>
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/global.css">
 </head>
 <body>
     
+    <div class="container">
+        <header>
+            <h2>Virtual Piano</h2>
+            <div class="column volume-slider">
+                <span>Volume</span> <input type="range">
+            </div>
+            <div class="column keys-check">
+                <span>Teclas</span> <input type="checkbox">
+            </div>
+        </header>
+        <ul class="piano-key">
+            <li class="natural C key"><span>a</span></li>
+            <li class="acidente CSust key">w<span></span></li>
+            <li class="natural D key"><span>s</span></li>
+            <li class="acidente DSust key"><span>e</span></li>
+            <li class="natural E key"><span>d</span></li>
+            <li class="natural F key"><span>f</span></li>
+            <li class="acidente FSust key"><span>t</span></li>
+            <li class="natural G key"><span>g</span></li>
+            <li class="acidente GSust key"><span>y</span></li>
+            <li class="natural A key"><span>h</span></li>
+            <li class="acidente ASust key"><span>u</span></li>
+            <li class="natural B key"><span>j</span></li>
+            <li class="natural C key"><span>k</span></li>
+            <li class="acidente CSust key"><span>o</span></li>
+            <li class="natural D key"><span>l</span></li>
+            <li class="acidente DSust key"><span>p</span></li>
+            <li class="natural E key"><span>;</span></li>
+        </ul>
+    </div>
+    <script src="src/scripts/engine.js"></script>
 </body>
 </html>
